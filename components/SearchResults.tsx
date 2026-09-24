@@ -55,7 +55,7 @@ export default function SearchResults({
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* 左：一覧 */}
-        <div className="space-y-4">
+        <div className="order-2 space-y-4 lg:order-1">
           {results.length === 0 ? (
             <div className="rounded-xl bg-white p-8 text-center shadow-sm">
               <p className="font-bold">
@@ -161,7 +161,7 @@ export default function SearchResults({
         </div>
 
         {/* 右：地図 */}
-        <div className="lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)]">
+        <div className="order-1 lg:order-2 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)]">
           <div className="h-[500px] overflow-hidden rounded-xl bg-white shadow-sm lg:h-full">
             <CampgroundMap
               campgrounds={results}
