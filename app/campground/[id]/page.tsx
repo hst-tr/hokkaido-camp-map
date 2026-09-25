@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCampgrounds } from "@/lib/campground";
 import CampgroundDetailMap from "@/components/CampgroundDetailMap";
+import Image from "next/image";
 
 type Props = {
   params: Promise<{
@@ -168,6 +169,7 @@ export default async function CampgroundPage({
 
       <main className="min-h-screen bg-gray-50">
         <div className="mx-auto max-w-5xl px-4 py-8">
+
           {/* パンくず */}
           <div className="text-sm">
             <Link
@@ -199,6 +201,16 @@ export default async function CampgroundPage({
 
           {/* 基本情報 */}
           <section className="mt-6 rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+            <div className="relative mt-6 h-64 overflow-hidden rounded-2xl sm:h-96">
+              <Image
+                src={campground.image}
+                alt={`${campground.name}のデモ用イメージ`}
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+
             <div className="text-sm text-gray-500">
               {campground.area} / {campground.city}
             </div>

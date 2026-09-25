@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import SearchResultsMap from "@/components/SearchResultsMap";
+
 import type { Campground } from "@/lib/campground";
-import CampgroundMap from "@/components/CampgroundMap";
 
 type Props = {
   results: Campground[];
@@ -35,18 +37,13 @@ function getFacilityTags(camp: Campground) {
   return tags;
 }
 
-export default function SearchResults({
-  results,
-}: Props) {
-  const [selectedId, setSelectedId] =
-    useState<string | null>(null);
+export default function SearchResults({ results }: Props) {
+  const [selectedId, setSelectedId] = useState<string | null>(null);
 
   return (
     <section>
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-bold">
-          検索結果
-        </h2>
+        <h2 className="text-xl font-bold">検索結果</h2>
 
         <p className="text-sm text-gray-600">
           {results.length}件
@@ -54,11 +51,11 @@ export default function SearchResults({
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* 左：一覧 */}
+        {/* キャンプ場一覧 */}
         <div className="order-2 space-y-4 lg:order-1">
           {results.length === 0 ? (
-            <div className="rounded-xl bg-white p-8 text-center shadow-sm">
-              <p className="font-bold">
+            <div className="rounded-2xl bg-white p-8 text-center shadow-sm">
+              <p className="font-medium">
                 条件に一致するキャンプ場がありません。
               </p>
 
@@ -68,91 +65,81 @@ export default function SearchResults({
             </div>
           ) : (
             results.map((camp) => {
-              const locationTags =
-                getLocationTags(camp);
+              const isSelected = camp.id === selectedId;
 
-              const facilityTags =
-                getFacilityTags(camp);
-
-              const isSelected =
-                selectedId === camp.id;
+              const locationTags = getLocationTags(camp);
+              const facilityTags = getFacilityTags(camp);
 
               return (
                 <article
                   key={camp.id}
-                  onClick={() =>
-                    setSelectedId(camp.id)
-                  }
-                  className={`cursor-pointer rounded-xl bg-white p-5 shadow-sm transition ${
+                  onClick={() => setSelectedId(camp.id)}
+                  className={`cursor-pointer overflow-hidden rounded-2xl bg-white shadow-sm transition hover:shadow-md ${
                     isSelected
                       ? "ring-2 ring-green-600"
-                      : "hover:shadow-md"
+                      : ""
                   }`}
                 >
-                  <div className="text-sm text-gray-500">
-                    {camp.area} / {camp.city}
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={camp.image}
+                      alt={`${camp.name}のデモ用イメージ`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+
+                    <div className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-700">
+                      {camp.area}
+                    </div>
                   </div>
 
-                  <h3 className="mt-1 text-xl font-bold">
-                    {camp.name}
-                  </h3>
-
-                  {camp.subarea && (
-                    <p className="mt-1 text-sm text-gray-500">
-                      {camp.subarea}
+                  <div className="p-5">
+                    <p className="text-sm text-gray-500">
+                      {camp.city}
                     </p>
-                  )}
 
-                  {locationTags.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {locationTags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-800"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
+                    <h3 className="mt-1 text-lg font-bold">
+                      {camp.name}
+                    </h3>
 
-                  {facilityTags.length > 0 && (
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      {facilityTags
-                        .slice(0, 4)
-                        .map((tag) => (
+                    {locationTags.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-1.5">
+                        {locationTags.map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-700"
+                            className="rounded-full bg-green-50 px-2.5 py-1 text-xs text-green-700"
                           >
                             {tag}
                           </span>
                         ))}
+                      </div>
+                    )}
+
+                    {facilityTags.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {facilityTags.slice(0, 5).map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full bg-gray-100 px-2.5 py-1 text-xs text-gray-600"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="mt-4">
+                      <Link
+                        href={`/campground/${camp.id}`}
+                        onClick={(event) =>
+                          event.stopPropagation()
+                        }
+                        className="text-sm font-medium text-green-700 hover:underline"
+                      >
+                        詳細を見る →
+                      </Link>
                     </div>
-                  )}
-
-                  {camp.description && (
-                    <p className="mt-4 line-clamp-2 text-sm leading-6 text-gray-600">
-                      {camp.description}
-                    </p>
-                  )}
-
-                  <div className="mt-4 flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
-                      {isSelected
-                        ? "地図上で選択中"
-                        : "クリックして地図で確認"}
-                    </span>
-
-                    <Link
-                      href={`/campground/${camp.id}`}
-                      onClick={(event) =>
-                        event.stopPropagation()
-                      }
-                      className="font-bold text-green-700 hover:underline"
-                    >
-                      詳細を見る →
-                    </Link>
                   </div>
                 </article>
               );
@@ -160,10 +147,10 @@ export default function SearchResults({
           )}
         </div>
 
-        {/* 右：地図 */}
+        {/* 地図 */}
         <div className="order-1 lg:order-2 lg:sticky lg:top-4 lg:h-[calc(100vh-2rem)]">
-          <div className="h-[500px] overflow-hidden rounded-xl bg-white shadow-sm lg:h-full">
-            <CampgroundMap
+          <div className="h-[400px] overflow-hidden rounded-2xl bg-white shadow-sm lg:h-full">
+            <SearchResultsMap
               campgrounds={results}
               selectedId={selectedId}
               onSelect={setSelectedId}

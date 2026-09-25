@@ -1,31 +1,31 @@
-﻿id,name,area,city,subarea,address,latitude,longitude,coordinate_type,style_auto,style_free,style_cottage,style_glamping,location_sea,location_lake,location_river,location_forest,location_highland,facility_onsen,facility_shower,facility_power,facility_toilet,facility_garbage,facility_pet,facility_wifi,description,price_from,official_url,source_url,data_note
-D001,札幌市定山渓自然の村,道央,札幌市,定山渓,北海道札幌市定山渓,43.0618,141.3545,municipality_approx,,,1,,,,,1,,,,,,,,,,,,https://www.sapporo-satoyama.jp/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D002,オートリゾート滝野,道央,札幌市,南区,北海道札幌市滝野247,43.0618,141.3545,municipality_approx,1,1,,,,,,1,,,,,,,,,,,,https://www.takinopark.com/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D003,札幌野営場 by 焚火人,道央,札幌市,中央区,北海道札幌市宮の森,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D004,Redoor Sapporo,道央,札幌市,中央区,北海道札幌市盤渓,43.0618,141.3545,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D005,札幌手稲キャンプリゾート ホリッパ,道央,札幌市,手稲区,北海道札幌市手稲前田,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D006,八剣山ワイナリー焚き火キャンプ場,道央,札幌市,南区,北海道札幌市砥山,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D007,紅櫻アウトドアガーデン,道央,札幌市,南区,北海道札幌市澄川,43.0618,141.3545,municipality_approx,1,,,,,,,,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D008,美笛キャンプ場,道央,千歳市,支笏湖,北海道千歳市美笛,42.819,141.65,municipality_approx,,,,,,1,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D009,休暇村支笏湖モラップキャンプ場,道央,千歳市,支笏湖,北海道千歳市モラップ,42.819,141.65,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D010,植苗キャンプ場,道央,苫小牧市,植苗,北海道苫小牧市植苗,42.634,141.605,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D011,オートリゾート苫小牧アルテン,道央,苫小牧市,樽前,北海道苫小牧市樽前421,42.634,141.605,municipality_approx,1,,,,,,,1,,,,1,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D012,まあぶオートキャンプ場,道央,深川市,,北海道深川市音江町,43.72,142.04,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D013,朝里川温泉オートキャンプ場,道央,小樽市,朝里川温泉,北海道小樽市,43.1907,140.9947,municipality_approx,1,,,,,,1,,,,,1,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D014,アルトリ岬キャンプ場,道央,伊達市,,北海道伊達市南有珠町,42.4711,140.8681,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-D015,川下海浜キャンプ場,道央,石狩市,,北海道石狩市浜益区川下,43.1715,141.3156,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N001,リブマックスリゾート函館グリーンピア大沼 キャンプ場,道南,森町,大沼,北海道森町,42.1069,140.576,municipality_approx,,,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N002,立象山公園 せたな青少年旅行村,道南,せたな町,,北海道せたな町北檜山区,42.4167,139.8833,municipality_approx,,,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N003,道立公園噴火湾パノラマパーク / オートリゾート八雲,道南,八雲町,,北海道八雲町浜松368-8,42.2558,140.2655,municipality_approx,1,1,,,1,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N004,長万部公園キャンプ場,道南,長万部町,,北海道長万部町富野243-21,42.5127,140.375,municipality_approx,,,1,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N005,熊石青少年旅行村,道南,八雲町,熊石,北海道八雲町熊石平町,42.2558,140.2655,municipality_approx,,,,,1,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N006,賽の河原公園キャンプ場,道南,奥尻町,,北海道奥尻町稲穂,42.1727,139.514,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N007,函館市戸井ウォーターパーク オートキャンプ場,道南,函館市,戸井,北海道函館市原木309,41.7688,140.729,municipality_approx,1,,,,,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N008,白石公園はこだてオートキャンプ場,道南,函館市,,北海道函館市白石町,41.7688,140.729,municipality_approx,1,1,,,,,1,1,,,,1,,,,,,,,https://campet.net/hokkaido/dounan,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N009,ピリカキャンプ場,道南,今金町,,北海道今金町美利河,42.4295,140.0088,municipality_approx,,,,,,,,,,,,,,,,,,,,https://hakodate.or.jp/guide/modules/map/index.php?cid=240contents%2F,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N010,鶉ダムオートキャンプ場 ハチャムの森,道南,厚沢部町,,北海道厚沢部町木間内,41.9167,140.2167,municipality_approx,1,1,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N011,きじひき高原キャンプ場,道南,北斗市,,北海道北斗市村山174,41.824,140.6529,municipality_approx,,,,,,,,,1,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N012,湯の沢水辺公園,道南,北斗市,,北海道北斗市茂辺地市ノ渡,41.824,140.6529,municipality_approx,1,,,,,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N013,ペコレラ学舎,道南,八雲町,,北海道八雲町上八雲296-1,42.2558,140.2655,municipality_approx,1,1,,,,,,,,,,1,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N014,上磯ダム公園,道南,北斗市,,北海道北斗市野崎,41.824,140.6529,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
-N015,東大沼キャンプ場,道南,七飯町,,北海道七飯町東大沼,41.895,140.691,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://www.town.nanae.hokkaido.jp/hotnews/detail/00000297.html,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。
+id,name,area,city,subarea,address,latitude,longitude,coordinate_type,style_auto,style_free,style_cottage,style_glamping,location_sea,location_lake,location_river,location_forest,location_highland,facility_onsen,facility_shower,facility_power,facility_toilet,facility_garbage,facility_pet,facility_wifi,description,price_from,official_url,source_url,data_note,image
+D001,札幌市定山渓自然の村,道央,札幌市,定山渓,北海道札幌市定山渓,43.0618,141.3545,municipality_approx,,,1,,,,,1,,,,,,,,,,,,https://www.sapporo-satoyama.jp/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-01.jpg
+D002,オートリゾート滝野,道央,札幌市,南区,北海道札幌市滝野247,43.0618,141.3545,municipality_approx,1,1,,,,,,1,,,,,,,,,,,,https://www.takinopark.com/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-02.jpg
+D003,札幌野営場 by 焚火人,道央,札幌市,中央区,北海道札幌市宮の森,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-03.jpg
+D004,Redoor Sapporo,道央,札幌市,中央区,北海道札幌市盤渓,43.0618,141.3545,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-04.jpg
+D005,札幌手稲キャンプリゾート ホリッパ,道央,札幌市,手稲区,北海道札幌市手稲前田,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-05.jpg
+D006,八剣山ワイナリー焚き火キャンプ場,道央,札幌市,南区,北海道札幌市砥山,43.0618,141.3545,municipality_approx,1,,,,,,,1,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-06.jpg
+D007,紅櫻アウトドアガーデン,道央,札幌市,南区,北海道札幌市澄川,43.0618,141.3545,municipality_approx,1,,,,,,,,,,,,,,,,,,,https://tomo-campers.jp/campsite/,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-01.jpg
+D008,美笛キャンプ場,道央,千歳市,支笏湖,北海道千歳市美笛,42.819,141.65,municipality_approx,,,,,,1,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-02.jpg
+D009,休暇村支笏湖モラップキャンプ場,道央,千歳市,支笏湖,北海道千歳市モラップ,42.819,141.65,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-03.jpg
+D010,植苗キャンプ場,道央,苫小牧市,植苗,北海道苫小牧市植苗,42.634,141.605,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-04.jpg
+D011,オートリゾート苫小牧アルテン,道央,苫小牧市,樽前,北海道苫小牧市樽前421,42.634,141.605,municipality_approx,1,,,,,,,1,,,,1,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-05.jpg
+D012,まあぶオートキャンプ場,道央,深川市,,北海道深川市音江町,43.72,142.04,municipality_approx,,,,,,,,1,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-06.jpg
+D013,朝里川温泉オートキャンプ場,道央,小樽市,朝里川温泉,北海道小樽市,43.1907,140.9947,municipality_approx,1,,,,,,1,,,,,1,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-01.jpg
+D014,アルトリ岬キャンプ場,道央,伊達市,,北海道伊達市南有珠町,42.4711,140.8681,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-02.jpg
+D015,川下海浜キャンプ場,道央,石狩市,,北海道石狩市浜益区川下,43.1715,141.3156,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://campet.net/hokkaido/douou,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-03.jpg
+N001,リブマックスリゾート函館グリーンピア大沼 キャンプ場,道南,森町,大沼,北海道森町,42.1069,140.576,municipality_approx,,,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-04.jpg
+N002,立象山公園 せたな青少年旅行村,道南,せたな町,,北海道せたな町北檜山区,42.4167,139.8833,municipality_approx,,,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-05.jpg
+N003,道立公園噴火湾パノラマパーク / オートリゾート八雲,道南,八雲町,,北海道八雲町浜松368-8,42.2558,140.2655,municipality_approx,1,1,,,1,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-06.jpg
+N004,長万部公園キャンプ場,道南,長万部町,,北海道長万部町富野243-21,42.5127,140.375,municipality_approx,,,1,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-01.jpg
+N005,熊石青少年旅行村,道南,八雲町,熊石,北海道八雲町熊石平町,42.2558,140.2655,municipality_approx,,,,,1,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-02.jpg
+N006,賽の河原公園キャンプ場,道南,奥尻町,,北海道奥尻町稲穂,42.1727,139.514,municipality_approx,,,,,1,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-03.jpg
+N007,函館市戸井ウォーターパーク オートキャンプ場,道南,函館市,戸井,北海道函館市原木309,41.7688,140.729,municipality_approx,1,,,,,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-04.jpg
+N008,白石公園はこだてオートキャンプ場,道南,函館市,,北海道函館市白石町,41.7688,140.729,municipality_approx,1,1,,,,,1,1,,,,1,,,,,,,,https://campet.net/hokkaido/dounan,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-05.jpg
+N009,ピリカキャンプ場,道南,今金町,,北海道今金町美利河,42.4295,140.0088,municipality_approx,,,,,,,,,,,,,,,,,,,,https://hakodate.or.jp/guide/modules/map/index.php?cid=240contents%2F,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-06.jpg
+N010,鶉ダムオートキャンプ場 ハチャムの森,道南,厚沢部町,,北海道厚沢部町木間内,41.9167,140.2167,municipality_approx,1,1,,,,,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-01.jpg
+N011,きじひき高原キャンプ場,道南,北斗市,,北海道北斗市村山174,41.824,140.6529,municipality_approx,,,,,,,,,1,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-02.jpg
+N012,湯の沢水辺公園,道南,北斗市,,北海道北斗市茂辺地市ノ渡,41.824,140.6529,municipality_approx,1,,,,,,1,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-03.jpg
+N013,ペコレラ学舎,道南,八雲町,,北海道八雲町上八雲296-1,42.2558,140.2655,municipality_approx,1,1,,,,,,,,,,1,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-04.jpg
+N014,上磯ダム公園,道南,北斗市,,北海道北斗市野崎,41.824,140.6529,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://domingo.ne.jp/article/15524,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-05.jpg
+N015,東大沼キャンプ場,道南,七飯町,,北海道七飯町東大沼,41.895,140.691,municipality_approx,,,,,,1,,,,,,,,,,,,,,https://www.town.nanae.hokkaido.jp/hotnews/detail/00000297.html,座標は市町村中心付近のデモ用概算。施設位置ではありません。未確認の設備項目は空欄。,/images/camp-06.jpg

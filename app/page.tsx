@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+import OpeningAnimation from "@/components/OpeningAnimation";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import { getCampgrounds } from "@/lib/campground";
 
 function getLocationTags(
@@ -43,32 +46,36 @@ export default function HomePage() {
       />
 
       <main className="min-h-screen bg-white">
+        <OpeningAnimation />
         {/* ヒーロー */}
-        <section className="bg-green-950 text-white">
-          <div className="mx-auto max-w-7xl px-4 py-20 sm:py-28">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold tracking-widest text-green-300">
-                HOKKAIDO CAMPGROUND MAP
+        <section className="relative min-h-[560px] overflow-hidden">
+          <HeroSlideshow />
+
+          <div className="relative z-10 mx-auto flex min-h-[560px] max-w-7xl items-center px-4 py-20">
+            <div className="max-w-2xl text-white">
+              <p className="mb-4 text-sm font-medium tracking-widest">
+                HOKKAIDO CAMP MAP
               </p>
 
-              <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-6xl">
+              <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
                 北海道のキャンプ場を、
                 <br />
                 条件から探す。
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-green-100 sm:text-lg">
-                北海道のキャンプ場を、エリア・キャンプスタイル・
-                ロケーション・設備などの条件から検索できます。
+              <p className="mt-6 text-base leading-8 text-white/90 sm:text-lg">
+                エリアやキャンプスタイル、ロケーション、
+                設備などから、北海道のキャンプ場を探せます。
               </p>
 
               <div className="mt-8">
                 <Link
                   href="/search"
-                  className="inline-flex rounded-lg bg-white px-7 py-4 font-bold text-green-950 transition hover:bg-green-100"
+                  className="inline-flex items-center rounded-full bg-white px-6 py-3 font-medium text-green-800 shadow-lg transition hover:bg-gray-100"
                 >
-                  キャンプ場を探す →
-                </Link>
+              キャンプ場を探す
+              <span className="ml-2">→</span>
+              </Link>
               </div>
             </div>
           </div>
@@ -150,11 +157,15 @@ export default function HomePage() {
                   href={`/campground/${camp.id}`}
                   className="group overflow-hidden rounded-2xl border bg-white transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  {/* 画像の代わりのビジュアル領域 */}
-                  <div className="flex h-40 items-center justify-center bg-green-100">
-                    <span className="text-5xl transition group-hover:scale-110">
-                      ⛺
-                    </span>
+                  {/* 画像 */}
+                  <div className="relative h-48 w-full overflow-hidden rounded-xl">
+                    <Image
+                      src={camp.image}
+                      alt={`${camp.name}のデモ用イメージ`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
                   </div>
 
                   <div className="p-5">
