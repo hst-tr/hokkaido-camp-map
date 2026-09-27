@@ -2,21 +2,39 @@
 
 import { useEffect, useRef, useState } from "react";
 
+const OPENING_KEY = "hokkaido-camp-opening-played";
+
 export default function OpeningAnimation() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [visible, setVisible] = useState(true);
+
+  const [visible, setVisible] = useState(false);
   const [closing, setClosing] = useState(false);
 
   useEffect(() => {
-    const video = videoRef.current;
+    // このセッションですでに再生済みなら何もしない
+    const alreadyPlayed = sessionStorage.getItem(OPENING_KEY);
 
+    if (alreadyPlayed === "true") {
+      return;
+    }
+
+    // 今回のセッションでは再生済みとして記録
+    sessionStorage.setItem(OPENING_KEY, "true");
+
+    setVisible(true);
+  }, []);
+
+  useEffect(() => {
+    if (!visible) return;
+
+    const video = videoRef.current;
     if (!video) return;
 
     const handleEnded = () => {
-      // 動画終了 → フェードアウト開始
+      // 動画終了 → フェードアウト
       setClosing(true);
 
-      // フェードアウト完了後に画面から削除
+      // フェードアウト完了後に削除
       setTimeout(() => {
         setVisible(false);
       }, 800);
@@ -27,7 +45,7 @@ export default function OpeningAnimation() {
     return () => {
       video.removeEventListener("ended", handleEnded);
     };
-  }, []);
+  }, [visible]);
 
   if (!visible) {
     return null;

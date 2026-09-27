@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import OpeningAnimation from "@/components/OpeningAnimation";
-import HeroSlideshow from "@/components/HeroSlideshow";
+import HeroVideo from "@/components/HeroVideo";
 import { getCampgrounds } from "@/lib/campground";
 
 function getLocationTags(
@@ -49,7 +49,7 @@ export default function HomePage() {
         <OpeningAnimation />
         {/* ヒーロー */}
         <section className="relative min-h-[560px] overflow-hidden">
-          <HeroSlideshow />
+          <HeroVideo />
 
           <div className="relative z-10 mx-auto flex min-h-[560px] max-w-7xl items-center px-4 py-20">
             <div className="max-w-2xl text-white">
