@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
 
   robots: {
-    index: true,
-    follow: true,
+    index: process.env.SITE_PUBLIC === "true",
+    follow: process.env.SITE_PUBLIC === "true",
   },
 };
 
