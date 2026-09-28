@@ -20,13 +20,34 @@ export const metadata: Metadata = {
     "北海道キャンプ",
   ],
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "北海道のキャンプ場MAP",
     description:
       "北海道のキャンプ場を条件や地図から探せるキャンプ場検索サイト。",
+    url: "https://hokkaido-camp-map.vercel.app/",
     type: "website",
     locale: "ja_JP",
     siteName: "北海道のキャンプ場MAP",
+    images: [
+      {
+        url: "/ogp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "北海道のキャンプ場MAP",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "北海道のキャンプ場MAP",
+    description:
+      "北海道のキャンプ場を条件や地図から探せるキャンプ場検索サイト。",
+    images: ["/ogp.jpg"],
   },
 
   robots: {

@@ -154,7 +154,7 @@ export default async function CampgroundPage({
       longitude: campground.longitude,
     },
 
-    url: campground.official_url,
+    url: `https://hokkaido-camp-map.vercel.app/campground/${campground.id}`,
   };
 
   return (
