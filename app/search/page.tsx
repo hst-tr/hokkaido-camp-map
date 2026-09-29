@@ -52,7 +52,7 @@ export default async function SearchPage({
             href="/"
             className="text-sm text-green-700 hover:underline"
           >
-            ← 北海道のキャンプ場MAP
+            ← トップページ
           </a>
 
           <h1 className="mt-3 text-3xl font-bold">

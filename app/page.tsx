@@ -133,7 +133,7 @@ export default function HomePage() {
                     alt="地図を見る人のイラスト"
                     width={500}
                     height={500}
-                    className="h-auto w-full scale-[0.88] object-contain"
+                    className="h-auto w-full object-contain"
                   />
                 </div>
 
