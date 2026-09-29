@@ -98,42 +98,79 @@ export default function HomePage() {
         </section>
 
         {/* 特徴 */}
-        <section className="border-b bg-gray-50">
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3">
-            <div>
-              <p className="text-2xl">🔎</p>
+        <section className="bg-gray-50">
+          <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+            <div className="grid gap-8 lg:grid-cols-3">
 
-              <h2 className="mt-3 font-bold">
-                条件から検索
-              </h2>
+              {/* 条件から検索 */}
+              <div className="flex items-center gap-5">
+                <div className="w-1/3 shrink-0">
+                  <Image
+                    src="/images/campfire.png"
+                    alt="キャンプファイヤーのイラスト"
+                    width={500}
+                    height={500}
+                    className="h-auto w-full object-contain"
+                  />
+                </div>
 
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                エリアやスタイル、設備など複数の条件を組み合わせて検索できます。
-              </p>
-            </div>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-bold text-[#800000]">
+                    条件から検索
+                  </h2>
+                  <p className="mt-3 whitespace-nowrap text-[clamp(10px,2.5cqw,15px)] leading-7 text-gray-600">
+                    エリアやスタイル、設備など複数の<br />
+                    条件を組み合わせて検索できます。
+                  </p>
+                </div>
+              </div>
 
-            <div>
-              <p className="text-2xl">🗺️</p>
+              {/* 地図から確認 */}
+              <div className="flex items-center gap-5">
+                <div className="w-1/3 shrink-0">
+                  <Image
+                    src="/images/map.png"
+                    alt="地図を見る人のイラスト"
+                    width={500}
+                    height={500}
+                    className="h-auto w-full scale-[0.88] object-contain"
+                  />
+                </div>
 
-              <h2 className="mt-3 font-bold">
-                地図から確認
-              </h2>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-bold text-[#2e8b57]">
+                    地図から確認
+                  </h2>
+                  <p className="mt-3 whitespace-nowrap text-[clamp(10px,2.5cqw,15px)] leading-7 text-gray-600">
+                    検索結果を地図上で確認し、気になる<br />
+                    キャンプ場の位置を把握できます。
+                  </p>
+                </div>
+              </div>
 
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                検索結果を地図上で確認し、気になるキャンプ場の位置を把握できます。
-              </p>
-            </div>
+              {/* 詳細情報を確認 */}
+              <div className="flex items-center gap-5">
+                <div className="w-1/3 shrink-0">
+                  <Image
+                    src="/images/cottage.png"
+                    alt="キャンプ場のコテージのイラスト"
+                    width={500}
+                    height={500}
+                    className="h-auto w-full object-contain"
+                  />
+                </div>
 
-            <div>
-              <p className="text-2xl">⛺</p>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-bold text-[#808000]">
+                    詳細情報を確認
+                  </h2>
+                  <p className="mt-3 whitespace-nowrap text-[clamp(10px,2.5cqw,15px)] leading-7 text-gray-600">
+                    キャンプスタイルや設備、所在地などを<br />
+                    キャンプ場ごとに確認できます。
+                  </p>
+                </div>
+              </div>
 
-              <h2 className="mt-3 font-bold">
-                詳細情報を確認
-              </h2>
-
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                キャンプスタイルや設備、所在地などをキャンプ場ごとに確認できます。
-              </p>
             </div>
           </div>
         </section>
