@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+
+const notoSansJP = Noto_Sans_JP({
+  variable: "--font-noto-sans-jp",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hokkaido-camp-map.vercel.app"),
@@ -62,8 +68,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <body>{children}</body>
+    <html lang="ja" style={{ colorScheme: "light" }}>
+      <body className={notoSansJP.className}>{children}</body>
     </html>
   );
 }

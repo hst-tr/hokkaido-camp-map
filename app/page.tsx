@@ -52,32 +52,48 @@ export default function HomePage() {
           <HeroVideo />
 
           <div className="relative z-10 mx-auto flex min-h-[560px] max-w-7xl items-center px-4 py-20">
-            <div className="max-w-2xl text-white">
-              <p className="mb-4 text-sm font-medium tracking-widest">
-                HOKKAIDO CAMP MAP
-              </p>
+            <div className="relative h-auto w-full max-w-3xl lg:max-w-[80vw]">
+              <a
+                href="/search"
+                className="group flex w-full flex-col items-center justify-center gap-6 px-6 transition-transform duration-300 hover:scale-[1.02] sm:flex-row sm:gap-12 lg:px-16"
+                aria-label="キャンプ場を検索"
+              >
+                <Image
+                  src="/title.svg"
+                  alt="北海道のキャンプ場を、条件から探す。"
+                  width={1230}
+                  height={590}
+                  className="h-auto w-full min-w-0 flex-1 transition-transform duration-300 group-hover:scale-[1.02] sm:max-w-none"
+                  priority
+                />
 
-              <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
-                北海道のキャンプ場を、
-                <br />
-                条件から探す。
-              </h1>
-
-              <p className="mt-6 text-base leading-8 text-white/90 sm:text-lg">
-                エリアやキャンプスタイル、ロケーション、
-                設備などから、北海道のキャンプ場を探せます。
-              </p>
-
-              <div className="mt-8">
-                <Link
-                  href="/search"
-                  className="inline-flex items-center rounded-full bg-white px-6 py-3 font-medium text-green-800 shadow-lg transition hover:bg-gray-100"
+                <span
+                  className="
+                    shrink-0 whitespace-nowrap
+                    rounded-xl
+                    border border-white/40
+                    bg-white/20
+                    px-7 py-4
+                    text-xl font-bold text-white
+                    shadow-lg
+                    backdrop-blur-sm
+                    transition-all duration-300
+                    group-hover:bg-white/30
+                    sm:px-8 sm:py-5 sm:text-2xl
+                  "
                 >
-              キャンプ場を探す
-              <span className="ml-2">→</span>
-              </Link>
-              </div>
+                  キャンプ場を検索 →
+                </span>
+              </a>
             </div>
+
+            <h1 className="sr-only">
+              北海道のキャンプ場を、条件から探す。
+            </h1>
+
+            <p className="sr-only">
+              エリアやキャンプスタイル、ロケーション、設備などから、北海道のキャンプ場を探せます。
+            </p>
           </div>
         </section>
 
